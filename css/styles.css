@@ -1,0 +1,147 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --white: #ffffff;
+  --cloud: #f4f4fd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--slate);
+  background-color: var(--white);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--ocean);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--navy-blue);
+}
+.titles {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+.paragraph-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/* ------------------HEADER------------------- */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+.logo-part {
+  color: var(--navy-blue);
+}
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--ocean);
+}
+.header-address {
+  font-style: normal;
+}
+.header-address-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--ocean);
+}
+
+/* -------------------HERO---------------------- */
+
+.hero {
+  background-color: var(--navy-blue);
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--white);
+}
+.hero-btn {
+  background-color: var(--iris);
+  color: var(--white);
+}
+
+/* -----------------ADVANTAGES------------------- */
+
+/* ------------------WEDOING--------------------- */
+
+/* -----------------OUR TEAM--------------------- */
+
+.team {
+  background-color: var(--cloud);
+}
+.team-item {
+  background-color: var(--white);
+}
+/* -----------------PORTFOLIO-------------------- */
+
+.portfolio-btn {
+  color: var(--iris);
+  background-color: var(--cloud);
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white);
+}
+
+/* --------------------FOOTER-------------------- */
+.footer {
+  background-color: var(--navy-blue);
+}
+.footer-text {
+  color: var(--cloud);
+}
+.logo-footer-part {
+  color: var(--cloud);
+}
