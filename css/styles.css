@@ -207,7 +207,7 @@ img {
 }
 .team-item {
   background-color: var(--white);
-  width: calc((1158-24 * 3) / 4);
+  calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   border: 1px solid var(--cornflower);
 }
