@@ -7,6 +7,7 @@
   --light-slate: #8e8f99;
   --white: #ffffff;
   --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
 }
 
 body {
@@ -28,6 +29,9 @@ ul {
 img {
   display: block;
 }
+.image {
+  margin-bottom: 32px;
+}
 .list {
   list-style: none;
 }
@@ -37,6 +41,28 @@ img {
 .flex-list {
   display: flex;
   gap: 24px;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+.section {
+  padding: 120px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .btn {
   font-family: inherit;
@@ -67,8 +93,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin-bottom: 8px;
-  text-align: center;
 }
 .paragraph-text {
   font-size: 16px;
@@ -76,19 +100,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
-.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
-}
-.image {
-  margin-bottom: 32px;
-}
+
 /* ------------------HEADER------------------- */
 .header {
-  padding: 24px 156px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--cornflower);
 }
 .header-container {
   display: flex;
@@ -180,27 +196,26 @@ img {
 
 /* -----------------ADVANTAGES------------------- */
 .advantages {
-  padding: 120px 156px 0px 156px;
+  padding-bottom: 0px;
 }
 .advantages-item {
   max-width: 264px;
 }
 /* ------------------WEDOING--------------------- */
-.wedoing {
-  padding: 120px 156px;
-}
 
 /* -----------------OUR TEAM--------------------- */
 
 .team {
   background-color: var(--cloud);
-  padding: 120px 156px;
 }
 .team-item {
   background-color: var(--white);
-  width: calc((1158-24*3)/4);
+  width: calc((1158-24 * 3) / 4);
 }
-.team-paragraph {
+.team-item-text {
+  display: flex;
+  margin: 32px 0;
+  flex-direction: column;
   text-align: center;
 }
 /* -----------------PORTFOLIO-------------------- */
@@ -209,15 +224,34 @@ img {
   padding-top: 96px;
   padding-bottom: 120px;
 }
+.portfolio-btn-list {
+  justify-content: center;
+  margin-bottom: 72px;
+}
 .portfolio-btn {
   color: var(--iris);
   background-color: var(--cloud);
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--white);
 }
-
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.portfolio-item {
+  width: calc((1158-24*2)/3);
+}
+.portfolio-item-text {
+    display: flex;
+    margin: 32px 0;
+    flex-direction: column;
+}
 /* --------------------FOOTER-------------------- */
 .footer {
   background-color: var(--navy-blue);
