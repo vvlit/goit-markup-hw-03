@@ -117,8 +117,9 @@ img {
   gap: 40px;
 }
 .logo-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 76px;
-  padding: 24px 0;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -207,7 +208,7 @@ img {
 }
 .team-item {
   background-color: var(--white);
-  calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   border: 1px solid var(--cornflower);
 }
