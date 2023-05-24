@@ -144,6 +144,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-link:hover,
 .header-link:focus {
